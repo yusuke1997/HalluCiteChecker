@@ -6,7 +6,7 @@ authors = [
     { name = "Yusuke Sakai", email = "sakai.yusuke.sr9@is.naist.jp" }
 ]
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.10"
 dependencies = [
     "accelerate>=0.20.3",
     "acl-anthology>=1.0.0",
