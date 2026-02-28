@@ -14,13 +14,15 @@ class SingleProcessDataLoader(torch.utils.data.DataLoader):
 torch.utils.data.DataLoader = SingleProcessDataLoader
 
 # パッチ適用後に DeLFT をインポート
-import delft
+# import delft # 組み込みにしたので。
+from HalluCiteChecker.third_party import delft
 
 # delft.DELFT_PROJECT_DIR = os.path.dirname(__file__)
 delft.DELFT_PROJECT_DIR = os.path.join(os.path.dirname(__file__), "models")
 #print(__file__)
 
-from delft.sequenceLabelling import Sequence
+# from delft.sequenceLabelling import Sequence
+from HalluCiteChecker.third_party.delft.sequenceLabelling import Sequence
 from huggingface_hub import hf_hub_download
 
 class DelftCitationRecognizer(BaseCitationRecognizer):

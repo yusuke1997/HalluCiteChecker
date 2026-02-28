@@ -611,33 +611,6 @@ wheels = [
 ]
 
 [[package]]
-name = "delft"
-version = "0.0.0"
-source = { git = "https://github.com/kermitt2/delft.git?rev=feature%2Fonnx-export#693c56d303b2c42668f11b37b756bc13ad22b216" }
-dependencies = [
-    { name = "accelerate" },
-    { name = "blingfire2" },
-    { name = "h5py" },
-    { name = "lmdb" },
-    { name = "numpy" },
-    { name = "pandas" },
-    { name = "protobuf" },
-    { name = "pydot" },
-    { name = "pytest" },
-    { name = "python-dotenv" },
-    { name = "pytorch-crf" },
-    { name = "regex" },
-    { name = "requests" },
-    { name = "scikit-learn" },
-    { name = "sentencepiece" },
-    { name = "torch" },
-    { name = "tqdm" },
-    { name = "transformers" },
-    { name = "truecase" },
-    { name = "unidecode" },
-]
-
-[[package]]
 name = "deprecated"
 version = "1.3.1"
 source = { registry = "https://pypi.org/simple" }
@@ -1076,21 +1049,40 @@ wheels = [
 
 [[package]]
 name = "hallucitechecker"
-version = "0.1.0"
+version = "0.1.1"
 source = { editable = "." }
 dependencies = [
+    { name = "accelerate" },
     { name = "acl-anthology" },
+    { name = "blingfire2" },
     { name = "datasets" },
-    { name = "delft" },
     { name = "docling" },
+    { name = "h5py" },
+    { name = "lmdb" },
+    { name = "numpy" },
     { name = "onnxruntime" },
     { name = "openreview-py" },
+    { name = "pandas" },
+    { name = "protobuf" },
+    { name = "pydot" },
     { name = "pypdf" },
+    { name = "pytest" },
+    { name = "python-dotenv" },
+    { name = "pytorch-crf" },
     { name = "rapidfuzz" },
     { name = "rapidocr-onnxruntime" },
+    { name = "regex" },
+    { name = "requests" },
     { name = "rich" },
+    { name = "scikit-learn" },
+    { name = "sentencepiece" },
     { name = "spacy" },
     { name = "termcolor" },
+    { name = "torch" },
+    { name = "tqdm" },
+    { name = "transformers" },
+    { name = "truecase" },
+    { name = "unidecode" },
 ]
 
 [package.dev-dependencies]
@@ -1101,18 +1093,37 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+    { name = "accelerate", specifier = ">=0.20.3" },
     { name = "acl-anthology", specifier = ">=1.0.0" },
+    { name = "blingfire2", specifier = ">=0.2.1" },
     { name = "datasets", specifier = ">=4.6.1" },
-    { name = "delft", git = "https://github.com/kermitt2/delft.git?rev=feature%2Fonnx-export" },
     { name = "docling", specifier = ">=2.75.0" },
+    { name = "h5py", specifier = ">=3.15.1" },
+    { name = "lmdb", specifier = ">=1.7.5" },
+    { name = "numpy", specifier = "==2.3.4" },
     { name = "onnxruntime", specifier = ">=1.24.2" },
     { name = "openreview-py", specifier = ">=1.58.0" },
+    { name = "pandas", specifier = ">=2.3.3" },
+    { name = "protobuf", specifier = ">=7.34.0" },
+    { name = "pydot", specifier = ">=4.0.1" },
     { name = "pypdf", specifier = ">=6.7.4" },
+    { name = "pytest", specifier = ">=9.0.2" },
+    { name = "python-dotenv", specifier = ">=1.2.1" },
+    { name = "pytorch-crf", specifier = ">=0.7.2" },
     { name = "rapidfuzz", specifier = ">=3.14.3" },
     { name = "rapidocr-onnxruntime", specifier = ">=1.4.4" },
+    { name = "regex", specifier = ">=2026.2.19" },
+    { name = "requests", specifier = ">=2.32.5" },
     { name = "rich", specifier = ">=14.3.3" },
+    { name = "scikit-learn", specifier = ">=1.8.0" },
+    { name = "sentencepiece", specifier = ">=0.2.1" },
     { name = "spacy", specifier = ">=3.8.11" },
     { name = "termcolor", specifier = ">=3.3.0" },
+    { name = "torch", specifier = ">=2.10.0" },
+    { name = "tqdm", specifier = ">=4.67.3" },
+    { name = "transformers", specifier = ">=4.57.6" },
+    { name = "truecase", specifier = ">=0.0.14" },
+    { name = "unidecode", specifier = ">=1.4.0" },
 ]
 
 [package.metadata.requires-dev]

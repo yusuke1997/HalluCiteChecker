@@ -1,26 +1,48 @@
 [project]
 name = "hallucitechecker"
-version = "0.1.0"
+version = "0.1.1"
 description = "Add your description here"
+authors = [
+    { name = "Yusuke Sakai", email = "sakai.yusuke.sr9@is.naist.jp" }
+]
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "accelerate>=0.20.3",
     "acl-anthology>=1.0.0",
+    "blingfire2>=0.2.1",
     "datasets>=4.6.1",
-    "delft",
     "docling>=2.75.0",
+    "h5py>=3.15.1",
+    "lmdb>=1.7.5",
+    "numpy==2.3.4",
     "onnxruntime>=1.24.2",
     "openreview-py>=1.58.0",
+    "pandas>=2.3.3",
+    "protobuf>=7.34.0",
+    "pydot>=4.0.1",
     "pypdf>=6.7.4",
+    "pytest>=9.0.2",
+    "python-dotenv>=1.2.1",
+    "pytorch-crf>=0.7.2",
     "rapidfuzz>=3.14.3",
     "rapidocr-onnxruntime>=1.4.4",
+    "regex>=2026.2.19",
+    "requests>=2.32.5",
     "rich>=14.3.3",
+    "scikit-learn>=1.8.0",
+    "sentencepiece>=0.2.1",
     "spacy>=3.8.11",
     "termcolor>=3.3.0",
+    "torch>=2.10.0",
+    "tqdm>=4.67.3",
+    "transformers>=4.57.6",
+    "truecase>=0.0.14",
+    "unidecode>=1.4.0",
 ]
 
-[tool.uv.sources]
-delft = { git = "https://github.com/kermitt2/delft.git", rev = "feature/onnx-export" }
+[tool.hatch.metadata]
+allow-direct-references = true
 
 [dependency-groups]
 dev = [
@@ -33,7 +55,12 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = ["HalluCiteChecker"]
+only-include = ["HalluCiteChecker", "CitationRecognizer"]
+exclude = [
+  "**/__pycache__/**",
+  "**/*.pyc",
+]
+
 
 [project.scripts]
 hallucitechecker = "HalluCiteChecker.cli.main:main"
