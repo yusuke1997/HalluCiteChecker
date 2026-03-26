@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 # https://github.com/naist-nlp/mbrs/blob/main/LICENSE
 MIT License
@@ -38,8 +39,6 @@ Example:
     ...         scores = metric.score(h, s)
     >>> res = timer.aggregate().result()  # return the result table
 """
-
-from __future__ import annotations
 
 import contextlib
 import time
