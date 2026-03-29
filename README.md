@@ -12,5 +12,45 @@ HalluCiteChecker
 <img src="https://raw.githubusercontent.com/yusuke1997/HalluCiteChecker/main/assets/overview.png" height="480px">
 </p>
 
+## Installation
 
+You can install from PyPi:
 
+``` bash
+pip install hallucitechecker
+```
+
+For developers, it can be installed from the source.
+
+``` bash
+git clone git@github.com:yusuke1997/HalluCiteChecker.git
+cd HalluCiteChecker/
+pip install ./
+```
+
+For uv users:
+``` bash
+uv add hallucitechecker
+```
+
+## Quick start
+
+``` bash
+hallucitechecker -i manuscript.pdf
+```
+If it is detected, it will be displayed in the CLI.
+
+You can treat multiple PDF files at once.
+
+``` bash
+hallucitechecker -i manuscript1.pdf manusctipt2.pdf
+or
+hallucitechecker -i manuscripts_dir/*
+```
+
+If you get a PDF with highlights, please specify the output directory.
+``` bash
+hallucitechecker -i manuscript.pdf -o results_dir
+```
+
+If a hallucitation is detected, a PDF will be generated. If everything is clear, no PDF will be generated. In other words, you only need to manually verify the PDFs in the output directory.
