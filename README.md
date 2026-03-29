@@ -14,6 +14,11 @@ HalluCiteChecker
 <img src="https://raw.githubusercontent.com/yusuke1997/HalluCiteChecker/main/assets/overview.png" height="480px">
 </p>
 
+>  [!NOTE]
+>
+> Due to a NumPy-related issue, installation with Python 3.10 was not supported. We support Python 3.11 and later versions. Users who attempted to install the package with Python 3.10 may have encountered installation errors. Please try again using Python 3.11 or a later version.
+
+
 ## Installation
 
 You can install from PyPi:
