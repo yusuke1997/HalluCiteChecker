@@ -18,6 +18,12 @@ HalluCiteChecker
 >
 > Due to a NumPy-related issue, installation with Python 3.10 was not supported. We support Python 3.11 and later versions. Users who attempted to install the package with Python 3.10 may have encountered installation errors. Please try again using Python 3.11 or a later version.
 
+>  [!NOTE]
+>
+>　We've prepared a demonstration on **Google Colab**. Please give it a try!!
+> https://colab.research.google.com/drive/1MuMCc__yuAMjZM8WCGa5sSel6werwNFX?usp=sharing
+
+
 
 ## Installation
 
@@ -61,3 +67,7 @@ hallucitechecker -i manuscript.pdf -o results_dir
 ```
 
 If a hallucitation is detected, a PDF will be generated. If everything is clear, no PDF will be generated. In other words, you only need to manually verify the PDFs in the output directory.
+
+We prepared the demonstration on Google Colab.
+
+https://colab.research.google.com/drive/1MuMCc__yuAMjZM8WCGa5sSel6werwNFX?usp=sharing
