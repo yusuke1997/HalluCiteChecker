@@ -23,7 +23,8 @@ HalluCiteChecker
 >　We've prepared a demonstration on **Google Colab**. Please give it a try!!
 > https://colab.research.google.com/drive/1MuMCc__yuAMjZM8WCGa5sSel6werwNFX?usp=sharing
 
-
+>  [!NOTE]
+>  **We have an internal version and plan to update it soon.** Please contact us if you need it urgently. Also, please feel free to let us know if you have any questions, opinions, advice, or suggestions.
 
 ## Installation
 
